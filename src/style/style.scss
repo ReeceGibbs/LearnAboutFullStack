@@ -1,0 +1,76 @@
+@import "./bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+//our variables
+$bg-colour : #273238;
+$menu-item-bg-colour : #2e3d44;
+$footer-colour : #e2b26b;
+$text-colour : #87cdee;
+$modal-colour : #abce95;
+$label-font : 'Amatic SC', serif;
+
+//our body style
+body {
+
+    background-color: $bg-colour;
+}
+
+//our menu style
+.menu {
+
+    color : $text-colour;
+    font-family: $label-font;
+    font-size: 26px;
+    margin : 30% 0;
+    text-align: center;
+
+    &.small-display {
+
+        display : flex;
+        flex-wrap : wrap;
+    }
+
+    .menu-item {
+
+        margin : 0 100px;
+    }
+}
+
+.album-modal {
+
+    .modal-dialog {
+        max-width: 1000px;
+    }
+}
+
+//our modal styling
+.modal-content {
+    background-color: $bg-colour;
+    color : white;
+    font-family: $label-font;
+    font-size: 26px;
+
+    .modal-title {
+        color : $modal-colour;
+        font-size: 40px;
+    }
+}
+
+//button styling
+.btn-secondary {
+    color : $text-colour;
+}
+
+//we define the style of our footer
+.footer {
+
+    color: $footer-colour;
+    font-family: $label-font;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+    padding-bottom: 10px;
+    padding-right: 15px;
+}
