@@ -1,13 +1,13 @@
 //we import our menu component
 import Menu from './components/Menu'
 import Footer from './components/Footer'
-import Donut from './images/icons/donut.png'
+import DevelopmentLogo from './images/icons/development.png'
 
 function App() {
   return (
     <div className="container">
       <Menu />
-      <Footer title = "in honour of us" logo = {Donut}/>
+      <Footer title = "full stack answers" logo = {DevelopmentLogo}/>
     </div>
   );
 }

@@ -4,7 +4,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -10842,11 +10842,14 @@ body {
   background-color: #273238;
 }
 
+.menu-container {
+  margin-top: 15%;
+}
+
 .menu {
   color: #87cdee;
-  font-family: "Amatic SC", serif;
-  font-size: 26px;
-  margin: 30% 0;
+  font-family: "Source Code Pro", serif;
+  font-size: 20px;
   text-align: center;
 }
 
@@ -10862,20 +10865,16 @@ body {
   margin: 0 100px;
 }
 
-.album-modal .modal-dialog {
-  max-width: 1000px;
-}
-
 .modal-content {
   background-color: #273238;
   color: white;
-  font-family: "Amatic SC", serif;
-  font-size: 26px;
+  font-family: "Source Code Pro", serif;
+  font-size: 18px;
 }
 
 .modal-content .modal-title {
   color: #abce95;
-  font-size: 40px;
+  font-size: 18px;
 }
 
 .btn-secondary {
@@ -10884,7 +10883,7 @@ body {
 
 .footer {
   color: #e2b26b;
-  font-family: "Amatic SC", serif;
+  font-family: "Source Code Pro", serif;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -10892,5 +10891,9 @@ body {
   text-align: right;
   padding-bottom: 10px;
   padding-right: 15px;
+}
+
+.header-logo {
+  margin-right: 10px;
 }
 /*# sourceMappingURL=style.css.map */

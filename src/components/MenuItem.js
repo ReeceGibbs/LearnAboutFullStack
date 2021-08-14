@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, handleMouseOut, handleMouseOver } from 'react'
+import React, { useState } from 'react'
 import { Modal, Button } from 'react-bootstrap'
 
 //our menu item component
@@ -26,7 +26,7 @@ const MenuItem = ({ logo, label, body, modalType, headerLogo}) => {
             </div>
             <Modal show={showModal} onHide={handleClose} className={modalType}>
                 <Modal.Header>
-                    <Modal.Title><img src={headerLogo}/>{label}</Modal.Title>
+                    <Modal.Title><img className="header-logo" src={headerLogo}/>{label}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>{body}</Modal.Body>
                 <Modal.Footer>
@@ -43,7 +43,7 @@ const MenuItem = ({ logo, label, body, modalType, headerLogo}) => {
 MenuItem.defaultProps = {
     text: 'this is a menu item',
     body: 'this is a body',
-    modalType: 'standard-modal' 
+    modalType: 'normal-modal' 
 }
 
 export default MenuItem

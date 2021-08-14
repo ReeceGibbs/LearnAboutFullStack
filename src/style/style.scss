@@ -1,13 +1,12 @@
 @import "./bootstrap/scss/bootstrap";
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap');
 //our variables
 $bg-colour : #273238;
 $menu-item-bg-colour : #2e3d44;
 $footer-colour : #e2b26b;
 $text-colour : #87cdee;
 $modal-colour : #abce95;
-$label-font : 'Amatic SC', serif;
+$label-font : 'Source Code Pro', serif;
 
 //our body style
 body {
@@ -15,13 +14,17 @@ body {
     background-color: $bg-colour;
 }
 
+.menu-container {
+
+    margin-top: 15%;
+}
+
 //our menu style
 .menu {
 
     color : $text-colour;
     font-family: $label-font;
-    font-size: 26px;
-    margin : 30% 0;
+    font-size: 20px;
     text-align: center;
 
     &.small-display {
@@ -36,23 +39,17 @@ body {
     }
 }
 
-.album-modal {
-
-    .modal-dialog {
-        max-width: 1000px;
-    }
-}
 
 //our modal styling
 .modal-content {
     background-color: $bg-colour;
     color : white;
     font-family: $label-font;
-    font-size: 26px;
+    font-size: 18px;
 
     .modal-title {
         color : $modal-colour;
-        font-size: 40px;
+        font-size: 18px;
     }
 }
 
@@ -73,4 +70,9 @@ body {
     text-align: right;
     padding-bottom: 10px;
     padding-right: 15px;
+}
+
+.header-logo {
+
+    margin-right: 10px;
 }
